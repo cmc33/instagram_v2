@@ -5,6 +5,7 @@ def new
 end
 
 def create
+  @post = Post.create(post_params)
 end
 
 def index
