@@ -13,6 +13,10 @@ def index
   @posts = Post.all.reverse
 end
 
+def show
+  @post = Post.find(params[:id])
+end
+
 private
 
 def post_params  
