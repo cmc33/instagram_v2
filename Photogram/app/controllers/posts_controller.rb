@@ -27,10 +27,10 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      flash[:success] = "Post updated."
+      flash[:success] = "Post updated!"
       redirect_to posts_path
     else
-      flash.now[:alert] = "Update failed.  Please check the form."
+      flash.now[:alert] = "Oh god, something went wrong. Check it out"
       render :edit
     end
   end
