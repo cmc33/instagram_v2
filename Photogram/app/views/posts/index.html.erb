@@ -1,8 +1,10 @@
 <h1>Photogram</h1>
 
 <div class="posts-wrapper row">
-  <% @posts.each do |post| %>
-    <div class="post">
+ <% @posts.each do |post| %>
+  <%= render 'post', post: post %>
+<% end %>
+
       <div class="post-head">
         <div class="name">
           <%= post.user.user_name %>
